@@ -1,6 +1,6 @@
 package com.springboot.restful.Controller;
 
-import com.springboot.restful.Entity.Book;
+import com.springboot.restful.Domain.Entity.Book;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 

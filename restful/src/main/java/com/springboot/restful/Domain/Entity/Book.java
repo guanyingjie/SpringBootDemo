@@ -1,4 +1,4 @@
-package com.springboot.restful.Entity;
+package com.springboot.restful.Domain.Entity;
 
 import lombok.Data;
 
