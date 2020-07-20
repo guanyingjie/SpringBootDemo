@@ -1,23 +1,31 @@
 package com.springboot.restful.Exception;
 
-public class ResourceNotFoundException extends RuntimeException{
-    private String message;
+import java.util.Map;
 
-    public ResourceNotFoundException() {
-        super();
+public class ResourceNotFoundException extends BaseException{
+    public ResourceNotFoundException(Map<String,Object>data){
+        super(ErrorCode.RESOURCE_NOT_FOUND, data);
     }
 
-    public ResourceNotFoundException(String message) {
-        super(message);
-        this.message = message;
-    }
 
-    @Override
-    public String getMessage() {
-        return message;
-    }
 
-    public void setMessage(String message) {
-        this.message = message;
-    }
+    //    private String message;
+//
+//    public ResourceNotFoundException() {
+//        super();
+//    }
+//
+//    public ResourceNotFoundException(String message) {
+//        super(message);
+//        this.message = message;
+//    }
+//
+//    @Override
+//    public String getMessage() {
+//        return message;
+//    }
+//
+//    public void setMessage(String message) {
+//        this.message = message;
+//    }
 }

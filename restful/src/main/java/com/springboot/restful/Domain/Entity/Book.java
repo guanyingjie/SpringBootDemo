@@ -8,4 +8,6 @@ public class Book {
     private String name;
     private String description;
 
+    public Book(int id, String name, String description) {
+    }
 }
