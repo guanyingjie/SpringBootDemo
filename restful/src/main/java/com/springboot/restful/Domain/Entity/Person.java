@@ -15,9 +15,13 @@ public class Person {
     @Column(unique = true)
     private String name;
     private Integer age;
+    private Long companyId;
+    private Long schoolId;
 
-    public Person(String name, Integer age) {
+    public Person(String name, Integer age, Long companyId, Long schoolId) {
         this.name = name;
         this.age = age;
+        this.companyId = companyId;
+        this.schoolId = schoolId;
     }
 }

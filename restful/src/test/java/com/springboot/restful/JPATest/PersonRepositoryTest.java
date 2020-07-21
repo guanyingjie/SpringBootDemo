@@ -25,7 +25,7 @@ public class PersonRepositoryTest {
     @Before
     private void setUp(){
         assertNotNull(personRepository);
-        Person person = new Person("Angie",22);
+        Person person = new Person();
         Person savedperson = personRepository.saveAndFlush(person);
         savedperson.setName("updateName");
         personRepository.save(savedperson);
