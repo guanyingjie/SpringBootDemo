@@ -8,7 +8,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api")
 public class Helloworld {
     @GetMapping("/helloworld")
-    public String Helloworld(){
+    public String Helloworld() throws InterruptedException{
+        Thread.sleep(1000);
         return "ok";
     }
 }
